@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="tapbar">
+            <a class="tapbar-item-one" href="./index.html">
+                <img class="icon" src="https://static-00.iconduck.com/assets.00/house-icon-512x471-t03b54sj.png" alt="home">
+                <p class="label">Inicio</p>
+            </a>
+
+            <a class="tapbar-item-two" href="./pages/turnos.html">
+                <img class="icon" src="https://cdn-icons-png.freepik.com/256/747/747310.png" alt="Calendario turnos">
+                <p class="label">Turnos</p>
+            </a>
+            <a class="tapbar-item-three" href="https://wa.me/5492984731632">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/256/1384/1384023.png" alt="whatsapp">
+                <p class="label">Whatsapp</p>
+            </a>
+            <a class="tapbar-item-four" href="https://maps.app.goo.gl/Cni8jRbiq8wv5Xmv8">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-map-2064501-1743533.png" alt="Mapa">
+                <p class="label">Direccion</p>
+            </a>
+        </div>
+        <nav>
+            <!-- Logo -->
+            <a href="../index.html">
+                <img src="../resourse/favicon.png" alt="Logo Principal">
+            </a>
+            <!-- Lista de Navegacion -->
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./turnos.html">Turnos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./nuestros_servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" method="post" enctype="text/plain">
+        <!-- Campos del Form -->
+        <h3>Nombre y Apellido del titular del seguro</h3>
+        <input type="text" name="Nombre y Apellido del titular del seguro" id="">
+
+        <h3>Cristal A Reemplazar</h3>
+        <select name="Cristales" id="">
+            <option value="Parabrisas">Parabrisas</option>
+            <option value="Luneta">Luneta</option>
+            <option value="Puerta Delantera Derecha">Puerta Delantera Derecha</option>
+            <option value="Puerta Delantera Izquierda">Puerta Delantera Izquierda</option>
+            <option value="Puerta Trasera Derecha">Puerta Trasera Derecha</option>
+            <option value="Puerta Trasera Izquierda">Puerta Trasera Izquierda</option>
+            <option value="Otro">Otro</option>
+        </select>
+        
+        <h3>Seleccione Turno a Confirmar</h3>
+        <div>Turno 08:30 y retiro despues de las 18:00hs</div>
+        <input type="radio" name="Turno Mañana" value="Mañana">
+        <div>Turno 15:30 y retiro al otro dia despues de las 09:00hs</div>
+        <input type="radio" name="Turno Tarde" value="Tarde">
+
+        <h3>Seleccione fecha (sujeto a cambios)</h3>    
+        
+        <label for="start">Calendario:</label>
+
+        <input type="date" id="start" name="trip-start" value="2024-01-01" min="2018-01-01" max="2029-12-31" />
+
+        <h3>Marca Del vehiculo</h3>
+        <input type="text">
+    
+        <h3>Modelo del vehiculo(Nombre + ano)</h3>
+        <input type="text">
+
+        <h3>Compania de seguros</h3>
+        <input type="text">
+
+        <h3>El vehiculo posee:</h3>
+        <select name="Opcionales" id="">
+            <option value="Sensor de lluvia/luces">Sensor de lluvia/luces</option>
+            <option value="Antena de Radio">Antena de Radio</option>
+            <option value="Camara y Sensor">Camara y Sensor</option>
+            <option value="Nada">Nada</option>
+        </select>
+    </form>
+</body>
+
+</html>

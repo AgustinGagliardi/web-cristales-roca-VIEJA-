@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----- HEADER ------ */
+
+.tapbar {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: calc(100vw - 20px);
+    display: flex;
+    z-index: 5;
+    background-color: gray;
+    border-radius: 0.5cm;
+    align-items: center;
+}
+
+.tapbar-item-one,
+.tapbar-item-two,
+.tapbar-item-three,
+.tapbar-item-four {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+.icon {
+    width: 30px;
+}
+
+.header nav {
+    background-color: gray;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+
+}
+
+/* LOGO */
+.header nav img {
+    width: 150px;
+
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    background-color: green;
+    border-radius: 0.5cm;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header nav ul li {
+    padding: 0 1rem;
+    background-color: greenyellow;
+    border-radius: 0.2cm;
+}
+
+.header nav ul li a {
+    color: black;
+    text-decoration: none;
+
+
+
+}
+
+/* -------MAIN------ */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "area2"
+        "area1"
+        "area3"
+    ;
+    justify-content: center;
+}
+
+.area1 {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas:
+        ".texto1"
+        ".texto2"
+        ".texto3";
+    grid-area: area1;
+
+
+}
+
+.texto1 {
+    grid-area: texto1;
+    /* background-color: blue; */
+    padding: 10px;
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100vw;
+
+}
+
+.texto2 {
+    grid-area: texto2;
+    /* background-color: blueviolet; */
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100vw;
+    padding-left: 10px;
+}
+
+.texto3 {
+    grid-area: texto3;
+    /* background-color: chartreuse; */
+    font-size: 15px;
+    padding-left: 5px;
+    width: 100vw;
+
+}
+
+.area2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: area2;
+    border-bottom: solid green 15px;
+    width: 100vw;
+}
+
+.area2 img {
+    width: 100vw;
+}
+
+
+.area3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "texto4" "texto5" "texto6";
+    grid-area: area3;
+    padding-left: 2px;
+    gap: 20px;
+
+}
+
+.texto4 {
+    background-color: gray;
+    padding: 40px 25px 40px 25px;
+    border-radius: 0.5cm;
+    color: white;
+}
+
+.texto4 h3 {
+    margin-bottom: 20px;
+}
+
+.texto5 {
+    background-color: green;
+    border-radius: 0.5cm;
+    padding: 40px 25px 50px 25px;
+    color: white;
+}
+
+.texto5 h3 {
+    margin-bottom: 20px;
+}
+
+.texto6 {
+    background-color: green;
+    border-radius: 0.5cm;
+    padding: 40px 25px 40px 15px;
+    color: white;
+
+}
+
+.texto6 h3 {
+    margin-bottom: 20px;
+}
+
+.repre-texto {
+    text-align: center;
+}
+
+.repre-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 12px;
+
+
+}
+
+.repre-img img {
+    width: 200px;
+
+
+}
+
+/* ----- NOSOTROS ----- */
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.4fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "fotonosotros"
+        "texto1nosotros"
+        "listaaptitudes"
+        "beneficios";
+}
+
+.fotonosotros img {
+    grid-area: foto;
+    width: 100vw;
+    margin: 20px 0;
+    border-radius: 0.2cm 0.2cm 0 0;
+    border-bottom: 10px solid green;
+}
+
+.texto1nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.1fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "subnos1 subnos1 subnos1"
+        "subnos2 subnos2 subnos2"
+        "subnos3 subnos3 subnos3";
+    grid-area: texto1nosotros;
+    align-items: center;
+
+
+}
+
+.subnos1 {
+    grid-area: subnos1;
+    text-transform: uppercase;
+    color: green;
+    padding-left: 10px;
+}
+
+.subnos2 {
+    grid-area: subnos2;
+    padding-left: 10px;
+    text-transform: uppercase;
+
+}
+
+.subnos3 {
+    grid-area: subnos3;
+    padding-left: 10px;
+    margin-bottom: 30px;
+
+}
+
+.listaaptitudes {
+    grid-area: listaaptitudes;
+    display: flex;
+}
+
+.listaaptitudes img {
+    width: 20px;
+}
+
+.check-item {
+    display: flex;
+    padding-left: 10px;
+    margin: 10px 0;
+
+}
+
+.check-item h5 {
+    padding-left: 5px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "box1 box1 box1"
+        "box2 box2 box2"
+        "box3 box3 box3";
+    grid-area: beneficios;
+    justify-items: center;
+}
+
+.box1 {
+    grid-area: box1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.num {
+    color: green;
+    text-align: center;
+    font-size: 40px;
+    text-transform: bold;
+    text-transform: lowercase;
+}
+
+.box2 {
+    grid-area: box2;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.box3 {
+    grid-area: box3;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ---- FOOTER ----- */
+
+.footer-main {
+    background-color: rgb(47, 47, 47);
+    padding: 25px 32px 50px 32px;
+    color: white;
+
+}
+
+.footer-main h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.footer-main a img {
+    width: 30px;
+    padding-top: 20px;
+    gap: 16px;
+}
+
+.der {
+    padding-top: 10px;
+
+}
+
+.der a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+
+
+}
+
+.der h4 {
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.contact-item img {
+    width: 20px;
+}
+
+/* MOBILE FIRST */
+
+/* Para cambiar algo en MOBILE */
+@media (min-width: 200px) {
+    .header nav ul {
+        display: none;
+    }
+
+    .texto4 {
+        display: none;
+    }
+
+
+}
+
+
+/* Para que cambie en desktop */
+@media (min-width: 700px) {
+    .tapbar {
+        display: none;
+    }
+
+    .header nav ul {
+        display: flex;
+        margin: 2px 5px 2px 150px;
+    }
+
+    .container {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area3";
+        align-items: center;
+
+    }
+
+    .area1 {
+        display: grid;
+        grid-template-rows: 0.2fr 0.4fr 0.2fr;
+        grid-template-areas:
+            ".texto1"
+            ".texto2"
+            ".texto3";
+        grid-area: area1;
+
+
+    }
+
+    .texto1 {
+        grid-area: texto1;
+        /* background-color: blue; */
+        padding: 10px;
+        margin-top: 5px;
+        text-align: left;
+        margin-bottom: 20px;
+        width: 50vw;
+        font-size: 20px;
+        margin-left: 45px;
+
+    }
+
+    .texto2 {
+        grid-area: texto2;
+        /* background-color: blueviolet; */
+        font-size: 45px;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 20px;
+        width: 50vw;
+        padding-left: 10px;
+        margin-left: 40px;
+    }
+
+    .texto3 {
+        grid-area: texto3;
+        /* background-color: chartreuse; */
+        font-size: 17px;
+        padding-left: 5px;
+        width: 50vw;
+        margin-left: 40px;
+
+    }
+
+    .area2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-area: area2;
+        border-left: solid green 15px;
+        width: 40vw;
+        border-bottom: none;
+    }
+
+    .area2 img {
+        width: 50vw;
+    }
+
+    .area3 {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.3fr 0.3fr 0.3fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas:
+            ". . .";
+        width: 100vw;
+        justify-content: center;
+
+    }
+
+    .texto4 {
+        display: inline;
+    }
+
+
+    .texto6 {
+        background-color: gray;
+    }
+
+
+    .repre-img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 12px;
+        justify-content: space-around;
+
+
+    }
+
+    /* ---- NOSOTROS ----- */
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "fotonosotros texto1nosotros"
+            "fotonosotros listaaptitudes"
+            "fotonosotros beneficios";
+    }
+
+    .fotonosotros img {
+        grid-area: fotonosotros;
+        width: 50vw;
+    }
+
+    .texto1nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.4fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "subnos1 subnos1 subnos1"
+            "subnos2 subnos2 subnos2"
+            "subnos3 subnos3 subnos3";
+        grid-area: texto1nosotros;
+    }
+
+    .subnos1 {
+        grid-area: subnos1;
+    }
+
+    .subnos2 {
+        grid-area: subnos2;
+        font-size: 45px;
+    }
+
+    .subnos3 {
+        grid-area: subnos3;
+        margin: 0;
+    }
+
+    .listaaptitudes {
+        grid-area: listaaptitudes;
+    }
+
+    .beneficios {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box1{
+        padding: 15px;
+    }
+
+    .box2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+    }
+    
+    .box3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+    }
+    
+
+
+
+}
