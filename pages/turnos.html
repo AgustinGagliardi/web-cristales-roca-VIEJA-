@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turnos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 
 </head>
 
 <body>
     <header class="header">
         <div class="tapbar">
-            <a class="tapbar-item-one" href="./index.html">
+            <a class="tapbar-item-one" href="../index.html">
                 <img class="icon" src="https://static-00.iconduck.com/assets.00/house-icon-512x471-t03b54sj.png" alt="home">
                 <p class="label">Inicio</p>
             </a>
@@ -25,7 +27,7 @@
                 <img class="icon" src="https://cdn-icons-png.flaticon.com/256/1384/1384023.png" alt="whatsapp">
                 <p class="label">Whatsapp</p>
             </a>
-            <a class="tapbar-item-four" href="https://maps.app.goo.gl/Cni8jRbiq8wv5Xmv8">
+            <a class="tapbar-item-four" href="https://maps.app.goo.gl/DGkG4o1z1bPeXxRS6">
                 <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-map-2064501-1743533.png" alt="Mapa">
                 <p class="label">Direccion</p>
             </a>
@@ -45,51 +47,68 @@
             </ul>
         </nav>
     </header>
-    <form action="" method="post" enctype="text/plain">
-        <!-- Campos del Form -->
-        <h3>Nombre y Apellido del titular del seguro</h3>
-        <input type="text" name="Nombre y Apellido del titular del seguro" id="">
-
-        <h3>Cristal A Reemplazar</h3>
-        <select name="Cristales" id="">
-            <option value="Parabrisas">Parabrisas</option>
-            <option value="Luneta">Luneta</option>
-            <option value="Puerta Delantera Derecha">Puerta Delantera Derecha</option>
-            <option value="Puerta Delantera Izquierda">Puerta Delantera Izquierda</option>
-            <option value="Puerta Trasera Derecha">Puerta Trasera Derecha</option>
-            <option value="Puerta Trasera Izquierda">Puerta Trasera Izquierda</option>
-            <option value="Otro">Otro</option>
-        </select>
-        
-        <h3>Seleccione Turno a Confirmar</h3>
-        <div>Turno 08:30 y retiro despues de las 18:00hs</div>
-        <input type="radio" name="Turno Mañana" value="Mañana">
-        <div>Turno 15:30 y retiro al otro dia despues de las 09:00hs</div>
-        <input type="radio" name="Turno Tarde" value="Tarde">
-
-        <h3>Seleccione fecha (sujeto a cambios)</h3>    
-        
-        <label for="start">Calendario:</label>
-
-        <input type="date" id="start" name="trip-start" value="2024-01-01" min="2018-01-01" max="2029-12-31" />
-
-        <h3>Marca Del vehiculo</h3>
-        <input type="text">
+    <!-- MAIN -->
     
-        <h3>Modelo del vehiculo(Nombre + ano)</h3>
-        <input type="text">
+    <!-- Nombre y Apellido -->
+    <label for="inputPassword5" class="form-label">Nombre y Apellido del asegurado:</label>
+    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
 
-        <h3>Compania de seguros</h3>
-        <input type="text">
+    <!-- Cristal a cambiar -->
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccione Cristal a cambiar</option>
+        <option value="Parabrisas">Parabrisas</option>
+        <option value="Luneta">Luneta</option>
+        <option value="Puerta Delantera Derecha">Puerta Delantera Derecha</option>
+        <option value="Puerta Delantera Izquierda">Puerta Delantera Izquierda</option>
+        <option value="Puerta Trasera Derecha">Puerta Trasera Derecha</option>
+        <option value="Puerta Trasera Izquierda">Puerta Trasera Izquierda</option>
+        <option value="Otro">Otro</option>
+    </select>
 
-        <h3>El vehiculo posee:</h3>
-        <select name="Opcionales" id="">
-            <option value="Sensor de lluvia/luces">Sensor de lluvia/luces</option>
-            <option value="Antena de Radio">Antena de Radio</option>
-            <option value="Camara y Sensor">Camara y Sensor</option>
-            <option value="Nada">Nada</option>
-        </select>
-    </form>
-</body>
+    <!-- Turno a comfirmar -->
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+            Turno 8:30 hs y retiro después de las 18:00 hs
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+            Turno 15:30 hs y retiro al otro día después de las 9:00 hs
+        </label>
+    </div>
+      
+
+    <!-- Calendario -->
+
+    <!-- Datos del Seguro  -->
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Marca del Vehiculo</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Modelo del Vehiculo</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Nombre de su compania de seguros</label>
+      </div>
+    </div>
+
+    <!-- El vehiculo posee -->
+    <select class="form-select" aria-label="Default select example">
+        <option selected>El Vehiculo posee:</option>
+        <option value="1">Antena</option>
+        <option value="2">Sensor de lluvia/luces</option>
+        <option value="3">Camara</option>
+        <option value="4">Nada</option>
+    </select>
+
+    <button type="button" class="btn btn-success">Success</button>
+
+
+    </body>
 
 </html>
