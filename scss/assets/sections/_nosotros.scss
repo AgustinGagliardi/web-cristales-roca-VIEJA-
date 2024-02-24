@@ -1,0 +1,206 @@
+/* ----- NOSOTROS ----- */
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.4fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "fotonosotros"
+        "texto1nosotros"
+        "listaaptitudes"
+        "beneficios";
+}
+
+.fotonosotros img {
+    grid-area: foto;
+    width: 100vw;
+    margin: 20px 0;
+    border-radius: 0.2cm 0.2cm 0 0;
+    border-bottom: 10px solid green;
+}
+
+.texto1nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.1fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "subnos1 subnos1 subnos1"
+        "subnos2 subnos2 subnos2"
+        "subnos3 subnos3 subnos3";
+    grid-area: texto1nosotros;
+    align-items: center;
+
+
+}
+
+.subnos1 {
+    grid-area: subnos1;
+    text-transform: uppercase;
+    color: green;
+    padding-left: 10px;
+}
+
+.subnos2 {
+    grid-area: subnos2;
+    padding-left: 10px;
+    text-transform: uppercase;
+
+}
+
+.subnos3 {
+    grid-area: subnos3;
+    padding-left: 10px;
+    margin-bottom: 30px;
+
+}
+
+.listaaptitudes {
+    grid-area: listaaptitudes;
+    display: flex;
+}
+
+.listaaptitudes img {
+    width: 20px;
+}
+
+.check-item {
+    display: flex;
+    padding-left: 10px;
+    margin: 10px 0;
+
+}
+
+.check-item h5 {
+    padding-left: 5px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "box1 box1 box1"
+        "box2 box2 box2"
+        "box3 box3 box3";
+    grid-area: beneficios;
+    justify-items: center;
+}
+
+.box1 {
+    grid-area: box1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.num {
+    color: green;
+    text-align: center;
+    font-size: 40px;
+    text-transform: bold;
+    text-transform: lowercase;
+}
+
+.box2 {
+    grid-area: box2;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.box3 {
+    grid-area: box3;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ---- NOSOTROS ----- */
+
+@media (min-width: 700px){
+    .nosotros {
+     display: grid;
+     grid-template-columns: 0.7fr 1.3fr;
+     grid-template-rows: 1fr 0.2fr 0.2fr;
+     gap: 0px 0px;
+     grid-auto-flow: row;
+     grid-template-areas:
+         "fotonosotros texto1nosotros"
+         "fotonosotros listaaptitudes"
+         "fotonosotros beneficios";
+ }
+
+ .fotonosotros img {
+     grid-area: fotonosotros;
+     width: 50vw;
+ }
+
+ .texto1nosotros {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.2fr 0.4fr 0.3fr;
+     gap: 0px 0px;
+     grid-auto-flow: row;
+     grid-template-areas:
+         "subnos1 subnos1 subnos1"
+         "subnos2 subnos2 subnos2"
+         "subnos3 subnos3 subnos3";
+     grid-area: texto1nosotros;
+ }
+
+ .subnos1 {
+     grid-area: subnos1;
+ }
+
+ .subnos2 {
+     grid-area: subnos2;
+     font-size: 45px;
+ }
+
+ .subnos3 {
+     grid-area: subnos3;
+     margin: 0;
+ }
+
+ .listaaptitudes {
+     grid-area: listaaptitudes;
+ }
+
+ .beneficios {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .box1 {
+     padding: 15px;
+ }
+
+ .box2 {
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: bold;
+     padding: 15px;
+ }
+
+ .box3 {
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: bold;
+     padding: 15px;
+ }
+
+ }
+ 
