@@ -19,9 +19,9 @@
                 <p class="label">Inicio</p>
             </a>
 
-            <a class="tapbar-item-two" href="./pages/turnos.html">
-                <img class="icon" src="https://cdn-icons-png.freepik.com/256/747/747310.png" alt="Calendario turnos">
-                <p class="label">Turnos</p>
+            <a class="tapbar-item-two" href="../pages/nuestros_servicios.html">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/5604/5604754.png" alt="Calendario turnos">
+                <p class="label">Servicios</p>
             </a>
             <a class="tapbar-item-three" href="https://wa.me/5492984731632">
                 <img class="icon" src="https://cdn-icons-png.flaticon.com/256/1384/1384023.png" alt="whatsapp">
@@ -38,7 +38,7 @@
                 <img src="../resourse/favicon.png" alt="Logo Principal">
             </a>
             <!-- Lista de Navegacion -->
-            <ul>
+            <ul class="listado">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./turnos.html">Turnos</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
@@ -48,14 +48,14 @@
         </nav>
     </header>
     <!-- MAIN -->
+<form method="post">
     
     <!-- Nombre y Apellido -->
-    <label for="inputPassword5" class="form-label">Nombre y Apellido del asegurado:</label>
-    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-
+    <p>Nombre y Apellido del Asegurado:</p>
+    <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="default input example">
     <!-- Cristal a cambiar -->
     <select class="form-select" aria-label="Default select example">
-        <option selected>Seleccione Cristal a cambiar</option>
+        <option selected>Seleccione Cristal a cambiar:</option>
         <option value="Parabrisas">Parabrisas</option>
         <option value="Luneta">Luneta</option>
         <option value="Puerta Delantera Derecha">Puerta Delantera Derecha</option>
@@ -66,6 +66,7 @@
     </select>
 
     <!-- Turno a comfirmar -->
+    <p>Seleccione Turno a confirmar:</p>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
         <label class="form-check-label" for="exampleRadios1">
@@ -106,13 +107,11 @@
         <option value="4">Nada</option>
     </select>
 
-    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-success">Enviar</button>
 
+</form>
 
-
-
-
-
+    
     <!-- Footer -->
     <footer class="footer-main">
         <div class="izq">

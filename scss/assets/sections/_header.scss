@@ -1,21 +1,30 @@
+//---- HEADER ----
 header {
-    div {
-        a {
-            position: fixed;
-            left: 10px;
-            bottom: 10px;
-            width: calc(100vw - 20px);
-            display: flex;
-            z-index: 5;
-            background-color: gray;
-            border-radius: 0.5cm;
-            align-items: center;
-        }
+    .tapbar {
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+        width: calc(100vw - 20px);
+        display: flex;
+        z-index: 5;
+        background-color: gray;
+        border-radius: 0.5cm;
+        justify-content: space-evenly;
 
-        img {
+        .icon {
             width: 30px;
         }
 
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            text-decoration: none;
+            color: white;
+        }
 
 
     }
@@ -30,7 +39,7 @@ header {
             width: 150px;
         }
 
-        ul {
+        .listado {
             display: flex;
             list-style: none;
             background-color: green;
@@ -38,33 +47,47 @@ header {
             width: 70vw;
             align-items: center;
             justify-content: space-evenly;
+        }
 
-            li {
-                padding: 0 1rem;
-                background-color: greenyellow;
-                border-radius: 0.2cm;
+        li {
+            padding: 0 1rem;
+            background-color: greenyellow;
+            border-radius: 0.2cm;
+        }
 
-                a {
-                    color: black;
-                    text-decoration: none;
-                }
-            }
-
+        a {
+            color: black;
+            text-decoration: none;
         }
     }
 }
 
 /* Para cambiar algo en MOBILE */
-@media (min-width: 200px) {
+@media (max-width: 600px) {
     header {
-        display: none;
+        div {
+            display: inline;
+        }
+
+        nav {
+            background-color: gray;
+            .listado{
+                display: none;
+            }
+        }
     }
 }
 
 /* Para que cambie en desktop */
 @media (min-width: 700px) {
     header {
-        display: none;
+        .tapbar {
+            display: none;
+        }
+
+        .listado {
+            display: inline-flex;
+        }
 
         ul {
             display: flex;
