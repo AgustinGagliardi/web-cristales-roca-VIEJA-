@@ -1,8 +1,10 @@
-
-h1{
+.serviciostit {
     text-align: center;
-    padding: 20px;
     font-weight: bold;
+    background-color: #cdc776;
+    border-radius: 0.5cm;
+    margin-top: 5px;
+    height: 3rem;
 }
 
 .servicios {
@@ -10,7 +12,6 @@ h1{
     list-style: none;
     flex-direction: column;
     padding-left: 20px;
-    
 
 }
 

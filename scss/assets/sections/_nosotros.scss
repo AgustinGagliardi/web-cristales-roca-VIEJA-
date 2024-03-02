@@ -2,7 +2,7 @@
 .nosotros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 0.4fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -42,6 +42,7 @@
     text-transform: uppercase;
     color: green;
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .subnos2 {
@@ -129,78 +130,81 @@
 
 /* ---- NOSOTROS ----- */
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
+
+
     .nosotros {
-     display: grid;
-     grid-template-columns: 0.7fr 1.3fr;
-     grid-template-rows: 1fr 0.2fr 0.2fr;
-     gap: 0px 0px;
-     grid-auto-flow: row;
-     grid-template-areas:
-         "fotonosotros texto1nosotros"
-         "fotonosotros listaaptitudes"
-         "fotonosotros beneficios";
- }
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "fotonosotros texto1nosotros"
+            "fotonosotros listaaptitudes"
+            "fotonosotros beneficios"
+        ;
+    }
 
- .fotonosotros img {
-     grid-area: fotonosotros;
-     width: 50vw;
- }
+    .fotonosotros img {
+        grid-area: fotonosotros;
+        width: 50vw;
+    }
 
- .texto1nosotros {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 0.2fr 0.4fr 0.3fr;
-     gap: 0px 0px;
-     grid-auto-flow: row;
-     grid-template-areas:
-         "subnos1 subnos1 subnos1"
-         "subnos2 subnos2 subnos2"
-         "subnos3 subnos3 subnos3";
-     grid-area: texto1nosotros;
- }
+    .texto1nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.4fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "subnos1 subnos1 subnos1"
+            "subnos2 subnos2 subnos2"
+            "subnos3 subnos3 subnos3";
+        grid-area: texto1nosotros;
+    }
 
- .subnos1 {
-     grid-area: subnos1;
- }
+    .subnos1 {
+        grid-area: subnos1;
+        font-weight: bold;
+    }
 
- .subnos2 {
-     grid-area: subnos2;
-     font-size: 45px;
- }
+    .subnos2 {
+        grid-area: subnos2;
+        font-size: 45px;
+    }
 
- .subnos3 {
-     grid-area: subnos3;
-     margin: 0;
- }
+    .subnos3 {
+        grid-area: subnos3;
+        margin: 0;
+    }
 
- .listaaptitudes {
-     grid-area: listaaptitudes;
- }
+    .listaaptitudes {
+        grid-area: listaaptitudes;
+    }
 
- .beneficios {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
- }
+    .beneficios {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
- .box1 {
-     padding: 15px;
- }
+    .box1 {
+        padding: 15px;
+    }
 
- .box2 {
-     font-size: 20px;
-     text-transform: uppercase;
-     font-weight: bold;
-     padding: 15px;
- }
+    .box2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+    }
 
- .box3 {
-     font-size: 20px;
-     text-transform: uppercase;
-     font-weight: bold;
-     padding: 15px;
- }
+    .box3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+    }
 
- }
- 
+}

@@ -1,0 +1,80 @@
+/* ---- FOOTER ----- */
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "izq der";
+    background-color: rgb(47, 47, 47);
+    padding: 25px 32px 50px 32px;
+    color: white;
+
+    h3 {
+        font-size: 25px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    img {
+        width: 30px;
+        gap: 16px;
+    }
+
+    .izq {
+        grid-area: izq;
+    }
+
+    .der {
+        grid-area: der;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-decoration: underline;
+
+    }
+
+    .der h4 {
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .contact-item {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+
+    }
+
+    .contact-item img {
+        width: 20px;
+    }
+
+    @media (min-width: 700px) {
+        .repre-texto {
+            font-weight: bold;
+        }
+
+        .repre-img {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-left: 12px;
+            justify-content: space-around;
+
+
+        }
+    }
+}

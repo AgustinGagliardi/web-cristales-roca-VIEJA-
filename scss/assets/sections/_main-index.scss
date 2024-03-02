@@ -19,19 +19,28 @@
         ".texto2"
         ".texto3";
     grid-area: area1;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
 
 
 }
 
 .texto1 {
     grid-area: texto1;
-    /* background-color: blue; */
+    // background-color: blue;
     padding: 10px;
     margin-top: 5px;
     text-align: left;
     margin-bottom: 20px;
     width: 100vw;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
 
+    
 }
 
 .texto2 {
@@ -116,6 +125,7 @@
 
 .repre-texto {
     text-align: center;
+    font-weight: bold;
 }
 
 .repre-img {
@@ -134,57 +144,7 @@
 
 }
 
-/* ---- FOOTER ----- */
 
-.footer-main {
-    background-color: rgb(47, 47, 47);
-    padding: 25px 32px 50px 32px;
-    color: white;
-
-}
-
-.footer-main h3 {
-    font-size: 25px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-
-}
-
-.footer-main a img {
-    width: 30px;
-    padding-top: 20px;
-    gap: 16px;
-}
-
-.der {
-    padding-top: 10px;
-
-}
-
-.der a {
-    text-decoration: none;
-    color: white;
-    text-decoration: underline;
-
-
-}
-
-.der h4 {
-    margin-top: 10px;
-}
-
-.contact-item {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    padding: 10px 0;
-
-}
-
-.contact-item img {
-    width: 20px;
-}
 
 /* Para cambiar algo en MOBILE */
 @media (min-width: 200px) {
@@ -226,13 +186,13 @@
         grid-area: texto1;
         /* background-color: blue; */
         padding: 10px;
-        margin-top: 5px;
         text-align: left;
         margin-bottom: 20px;
         width: 50vw;
-        font-size: 20px;
-        margin-left: 45px;
-
+        margin-left: 40px;
+        font-family: "Hind", sans-serif;
+        font-weight: 700;
+        font-style: normal;
     }
 
     .texto2 {
@@ -262,13 +222,13 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-area: area2;
-        border-left: solid green 15px;
-        width: 40vw;
+        border-left: solid #008000 15px;
+        width: 45vw;
         border-bottom: none;
     }
 
     .area2 img {
-        width: 50vw;
+        width: 47.6vw;
     }
 
     .area3 {
@@ -292,7 +252,9 @@
         background-color: gray;
     }
 
-
+    .repre-texto{
+        font-weight: bold;
+    }
     .repre-img {
         display: flex;
         flex-direction: row;
