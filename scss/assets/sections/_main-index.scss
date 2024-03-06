@@ -19,11 +19,6 @@
         ".texto2"
         ".texto3";
     grid-area: area1;
-    font-family: "Hind", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-
 
 }
 
@@ -34,13 +29,15 @@
     margin-top: 5px;
     text-align: left;
     margin-bottom: 20px;
-    width: 100vw;
-    font-family: "Hind", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: xx-large;
 
-    
+    .maintext {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+
+
+
 }
 
 .texto2 {
@@ -148,7 +145,7 @@
 
 /* Para cambiar algo en MOBILE */
 @media (min-width: 200px) {
-    
+
     .texto4 {
         display: none;
     }
@@ -156,17 +153,18 @@
 
 }
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
     .container {
         display: grid;
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
         grid-template-rows: 1fr 0.5fr;
         gap: 0px 0px;
         grid-template-areas:
             "area1 area2"
-            "area3 area3";
-        align-items: center;
+            "area3 area3"
+        ;
+        width: 100vw;
+
 
     }
 
@@ -189,11 +187,17 @@
         text-align: left;
         margin-bottom: 20px;
         width: 50vw;
-        margin-left: 40px;
-        font-family: "Hind", sans-serif;
-        font-weight: 700;
-        font-style: normal;
+        margin: 20px 0px 0px 40px;
+
+        .maintext {
+            font-size: 60px;
+            font-weight: bold;
+
+        }
+
+
     }
+
 
     .texto2 {
         grid-area: texto2;
@@ -240,6 +244,8 @@
             ". . .";
         width: 100vw;
         justify-content: center;
+        margin-top: 20px;
+
 
     }
 
@@ -252,9 +258,10 @@
         background-color: gray;
     }
 
-    .repre-texto{
+    .repre-texto {
         font-weight: bold;
     }
+
     .repre-img {
         display: flex;
         flex-direction: row;
@@ -266,6 +273,3 @@
 
     }
 }
-
-
-    

@@ -1,0 +1,237 @@
+.main-contacto1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "contacto-mobile"
+        "mensaje-mobile"
+        "como-llegar"
+    ;
+
+    .contacto-mobile {
+        grid-area: contacto-mobile;
+        padding-top: 20px;
+        margin: 10px;
+
+        .linea-horizontal-top1 {
+            border: 40px solid green;
+            transform: skewX(-22deg) skewY(0deg);
+            translate: -40px;
+        }
+
+        .sub-title {
+            font-weight: bold;
+            font-size: 40px;
+            font-style: italic;
+            transform: skewX(-6deg) skewY(0deg);
+            margin-top: 20px;
+        }
+
+        .linea-horizontal1 {
+            border: 5px solid black;
+            transform: skewX(-20deg) skewY(0deg);
+            scale: 0.4;
+            translate: -120px;
+        }
+
+        .address {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .address-2 {
+            font-size: 20px;
+        }
+
+        .schedule {
+            margin-top: 10px;
+            font-size: 25px;
+        }
+
+        .schedule-2 {
+            font-size: 25px;
+        }
+
+        .phone {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+    }
+
+    .mensaje-mobile {
+        grid-area: mensaje-mobile;
+        border: 10px;
+        margin: 10px;
+        background-color: gray;
+        border-radius: 0.2cm;
+        margin-bottom: 30px;
+
+        .name1 {
+            margin-top: 10px;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+
+        .form-control {
+            width: 80vw;
+            margin-left: 6px;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+
+        button {
+            margin: 5px 0px 20px 10px;
+        }
+    }
+
+}
+
+
+
+.como-llegar {
+    grid-area: como-llegar;
+    margin-left: 5px;
+}
+
+@media (max-width: 699px) {
+    
+    .contacto-grande {
+        display: none;
+    }
+
+    .mensaje-grande {
+        display: none;
+    }
+
+    .como-llegar2 {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 700px) {
+    .contacto-mobile {
+        display: none;
+    }
+
+    .main-contacto2 {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "contacto-grande mensaje-grande";
+    }
+
+    .contacto-grande {
+        grid-area: contacto-grande;
+        padding-top: 20px;
+        margin: 10px;
+        width: 50vw;
+
+        .linea-horizontal-top2 {
+            border: 40px solid green;
+            transform: skewX(-22deg) skewY(0deg);
+            translate: -40px;
+        }
+
+        .sub-title {
+            font-weight: bold;
+            font-size: 100px;
+            font-style: italic;
+            transform: skewX(-6deg) skewY(0deg);
+            margin-top: 20px;
+        }
+
+        .linea-horizontal2 {
+            border: 5px solid black;
+            transform: skewX(-20deg) skewY(0deg);
+            scale: 0.4;
+            translate: -270px;
+        }
+
+        .address {
+            margin-top: 50px;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .address-2 {
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .schedule {
+            margin-top: 10px;
+            font-size: 25px;
+            margin-left: 30px;
+        }
+
+        .schedule-2 {
+            font-size: 25px;
+            margin-left: 30px;
+        }
+
+        .phone {
+            margin-top: 30px;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+    }
+
+    .mensaje-mobile {
+        display: none;
+    }
+
+    .mensaje-grande {
+        grid-area: mensaje-grande;
+        width: 45vw;
+        border: 10px;
+        margin: 10px;
+        background-color: gray;
+        border-radius: 0.2cm;
+        margin-bottom: 30px;
+
+        .name2 {
+            margin-top: 10px;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+
+        .form-control {
+            width: 840px;
+            margin-left: 6px;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+
+        button {
+            margin: 5px 0px 20px 10px;
+        }
+    }
+
+    .como-llegar {
+        display: none;
+    }
+
+    .como-llegar2 {
+        border-top: 1px solid black ;
+        margin-top: 30px;
+        width: 50vw;
+
+    }
+
+
+
+
+}
