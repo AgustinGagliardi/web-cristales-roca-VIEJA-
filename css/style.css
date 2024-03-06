@@ -109,6 +109,8 @@ header nav {
   @media (min-width: 700px) {
     .footer-main .repre-texto {
       font-weight: bold; }
+    .footer-main .img-footer {
+      margin-top: -40px; }
     .footer-main .repre-img {
       display: flex;
       flex-direction: row;
@@ -443,12 +445,20 @@ header nav {
     font-weight: bold;
     padding: 15px; } }
 
-.form-control {
-  border: green; }
-
-.form-select {
-  margin: 20px 0;
-  border-color: black; }
+.formulario {
+  margin-left: 10px; }
+  .formulario p {
+    margin-top: 5px;
+    margin-left: 10px; }
+  .formulario .form-control {
+    border-color: black;
+    margin: 10px 5px 0px -5px; }
+  .formulario .form-select {
+    margin: 10px 5px 0px -5px;
+    border-color: black; }
+  .formulario .btn {
+    align-items: center;
+    margin: 20px 20px 20px 0px; }
 
 .serviciostit {
   text-align: center;
@@ -456,16 +466,19 @@ header nav {
   background-color: #cdc776;
   border-radius: 0.5cm;
   margin-top: 5px;
-  height: 3rem; }
+  height: 3rem;
+  padding-top: 10px; }
 
 .servicios {
   display: flex;
   list-style: none;
   flex-direction: column;
-  padding-left: 20px; }
+  padding-left: 20px;
+  background-color: #A9E190; }
 
 @media (min-width: 700px) {
   .servicios {
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;

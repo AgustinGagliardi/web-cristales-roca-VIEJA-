@@ -5,6 +5,7 @@
     border-radius: 0.5cm;
     margin-top: 5px;
     height: 3rem;
+    padding-top: 10px;
 }
 
 .servicios {
@@ -12,13 +13,14 @@
     list-style: none;
     flex-direction: column;
     padding-left: 20px;
+    background-color: #A9E190;
 
 }
 
 
 @media (min-width: 700px) {
     .servicios {
-
+        background-color: white;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
