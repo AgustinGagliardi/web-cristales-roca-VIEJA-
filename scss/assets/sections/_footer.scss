@@ -2,12 +2,13 @@
 
 .footer-main {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "izq der";
     background-color: rgb(47, 47, 47);
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+        "izq"
+        "der"
+    ;
     padding: 25px 32px 50px 32px;
     color: white;
 
@@ -28,9 +29,8 @@
 
     .der {
         grid-area: der;
-        padding-top: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-end;
 
@@ -61,24 +61,33 @@
         width: 20px;
     }
 
-    @media (min-width: 700px) {
-        .repre-texto {
-            font-weight: bold;
-        }
 
-        .img-footer{
-            margin-top: -40px;
-        }
+    @media(min-width: 700px) {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "izq der";
+        background-color: rgb(47, 47, 47);
+        padding: 25px 32px 50px 32px;
+        color: white;
 
-        .repre-img {
+        .der {
+            grid-area: der;
             display: flex;
-            flex-direction: row;
-            align-items: center;
+            flex-direction: column;
             flex-wrap: wrap;
-            padding-left: 12px;
-            justify-content: space-around;
+            align-items: flex-end;
 
-
+        
         }
+    
+
+
     }
 }
+
+    
+
+ 

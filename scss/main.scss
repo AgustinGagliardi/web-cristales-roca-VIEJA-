@@ -1,5 +1,9 @@
-@import './assets/sections/variables';
-@import './assets/reset';
+// utilidades
+@import './assets/utilidades/variables';
+@import './assets/utilidades/reset';
+@import './assets/utilidades/animaciones';
+
+// secciones
 @import './assets/sections/header';
 @import './assets/sections/footer';
 @import './assets/sections/main-index';
