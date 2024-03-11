@@ -1,16 +1,14 @@
-
 .plkmain {
-    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
     display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
-    grid-template-rows: 0.6fr 0.4fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "plk video"
-        "rsp img-malatesta"
+        "plk"
+        "rsp"
     ;
-    
+
     .plk {
         grid-area: plk;
         background-color: #0251b8;
@@ -18,31 +16,29 @@
         border-radius: 0.5cm;
         color: white;
 
-        h1 {
+        h1{
             font-weight: bold;
-            font-size: 80px;
-            margin: 50px 50px 10px 50px;
+            text-align: center;
+            margin: 5px;
+
         }
 
         .linea-plk {
             border-bottom: 10px solid white;
             transform: skewX(-20deg) skewY(0deg);
             scale: 0.3;
-            translate: -160px;
+            translate: -150px;
         }
 
-        h2 {
-            font-size: 20px;
-            margin: 10px 50px 50px 50px;
+        h2{
+            margin: 10px 30px 30px 30px;
         }
     }
 
-    .video {
+    .video{
         grid-area: video;
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 10px;
-        align-items: center;
+        display: none;
+
     }
 
     .rsp {
@@ -55,35 +51,111 @@
 
         h2 {
             font-weight: bold;
-            font-size: 40px;
-            margin: 50px 50px 10px 50px;
+            font-size: 30px;
+            margin: 5px;
+            text-align: center;
         }
 
-        .linea-plk {
-            border-bottom: 10px solid white;
-            transform: skewX(-20deg) skewY(0deg);
-            scale: 0.3;
-            translate: -160px;
-        }
-
-        h3 {
-            font-size: 20px;
-            margin: 10px 50px 30px 50px;
+        h3{
+            margin: 10px 30px 30px 30px;
         }
 
         a{
-            font-size: 20px;
-            margin: 0px 50px 50px 50px;
-
+            margin: 10px 30px 30px 30px;
             color: white;
+            display: flex;
         }
-        
     }
 
 
 
 
+}
 
 
 
+
+
+@media(min-width: 700px) {
+    .plkmain {
+        background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "plk video"
+            "rsp rsp"
+        ;
+
+        .plk {
+            grid-area: plk;
+            background-color: #0251b8;
+            margin: 5px;
+            border-radius: 0.5cm;
+            color: white;
+
+            h1 {
+                font-weight: bold;
+                font-size: 80px;
+                margin: 50px 50px 10px 50px;
+            }
+
+            .linea-plk {
+                border-bottom: 10px solid white;
+                transform: skewX(-20deg) skewY(0deg);
+                scale: 0.3;
+                translate: -160px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin: 10px 50px 50px 50px;
+            }
+        }
+
+        .video {
+            grid-area: video;
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .rsp {
+            grid-area: rsp;
+            background-color: #0251b8;
+            margin: 5px;
+            margin-bottom: 30px;
+            border-radius: 0.5cm;
+            color: white;
+
+            h2 {
+                font-weight: bold;
+                font-size: 40px;
+                margin: 50px 50px 10px 50px;
+            }
+
+            .linea-plk {
+                border-bottom: 10px solid white;
+                transform: skewX(-20deg) skewY(0deg);
+                scale: 0.3;
+                translate: -160px;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin: 10px 50px 30px 50px;
+            }
+
+            a {
+                font-size: 20px;
+                margin: 0px 50px 50px 50px;
+
+                color: white;
+            }
+
+        }
+    }
 }

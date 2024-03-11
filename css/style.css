@@ -478,21 +478,88 @@ header nav {
     align-items: center;
     margin: 20px 20px 20px 0px; }
 
+.service {
+  background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray); }
+
 .serviciostit {
   text-align: center;
   font-weight: bold;
-  background-color: #cdc776;
-  border-radius: 0.5cm;
   margin-top: 5px;
-  height: 3rem;
   padding-top: 10px; }
 
 .servicios {
+  background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
   display: flex;
   list-style: none;
   flex-direction: column;
   padding-left: 20px;
   background-color: #A9E190; }
+  .servicios .uno {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(81, 202, 81, 0.644);
+    border-radius: 0.5cm; }
+    .servicios .uno h2 {
+      font-weight: bold;
+      padding-left: 15px; }
+    .servicios .uno p {
+      padding-left: 15px; }
+  .servicios .dos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(81, 202, 81, 0.644);
+    border-radius: 0.5cm; }
+    .servicios .dos h3 {
+      font-weight: bold;
+      padding-left: 15px; }
+    .servicios .dos p {
+      padding-left: 15px; }
+  .servicios .tres {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(81, 202, 81, 0.644);
+    border-radius: 0.5cm; }
+    .servicios .tres h3 {
+      font-weight: bold;
+      padding-left: 15px; }
+    .servicios .tres p {
+      padding-left: 15px; }
+  .servicios .cuatro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(81, 202, 81, 0.644);
+    border-radius: 0.5cm; }
+    .servicios .cuatro h3 {
+      font-weight: bold;
+      padding-left: 15px; }
+    .servicios .cuatro p {
+      padding-left: 15px; }
+  .servicios .cinco {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(81, 202, 81, 0.644);
+    border-radius: 0.5cm; }
+    .servicios .cinco h3 {
+      font-weight: bold;
+      padding-left: 15px; }
+    .servicios .cinco p {
+      padding-left: 15px; }
+  .servicios .seis {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(81, 202, 81, 0.644);
+    border-radius: 0.5cm; }
+    .servicios .seis h3 {
+      font-weight: bold;
+      padding-left: 15px; }
+    .servicios .seis p {
+      padding-left: 15px; }
 
 @media (min-width: 700px) {
   .servicios {
@@ -666,13 +733,12 @@ header nav {
     width: 50vw; } }
 
 .plkmain {
-  background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
   display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
-  grid-template-rows: 0.6fr 0.4fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "plk video" "rsp img-malatesta"; }
+  grid-template-areas: "plk" "rsp"; }
   .plkmain .plk {
     grid-area: plk;
     background-color: #0251b8;
@@ -681,22 +747,18 @@ header nav {
     color: white; }
     .plkmain .plk h1 {
       font-weight: bold;
-      font-size: 80px;
-      margin: 50px 50px 10px 50px; }
+      text-align: center;
+      margin: 5px; }
     .plkmain .plk .linea-plk {
       border-bottom: 10px solid white;
       transform: skewX(-20deg) skewY(0deg);
       scale: 0.3;
-      translate: -160px; }
+      translate: -150px; }
     .plkmain .plk h2 {
-      font-size: 20px;
-      margin: 10px 50px 50px 50px; }
+      margin: 10px 30px 30px 30px; }
   .plkmain .video {
     grid-area: video;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 10px;
-    align-items: center; }
+    display: none; }
   .plkmain .rsp {
     grid-area: rsp;
     background-color: #0251b8;
@@ -706,17 +768,69 @@ header nav {
     color: white; }
     .plkmain .rsp h2 {
       font-weight: bold;
-      font-size: 40px;
-      margin: 50px 50px 10px 50px; }
-    .plkmain .rsp .linea-plk {
-      border-bottom: 10px solid white;
-      transform: skewX(-20deg) skewY(0deg);
-      scale: 0.3;
-      translate: -160px; }
+      font-size: 30px;
+      margin: 5px;
+      text-align: center; }
     .plkmain .rsp h3 {
-      font-size: 20px;
-      margin: 10px 50px 30px 50px; }
+      margin: 10px 30px 30px 30px; }
     .plkmain .rsp a {
-      font-size: 20px;
-      margin: 0px 50px 50px 50px;
+      margin: 10px 30px 30px 30px;
+      color: white;
+      display: flex; }
+
+@media (min-width: 700px) {
+  .plkmain {
+    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "plk video" "rsp rsp"; }
+    .plkmain .plk {
+      grid-area: plk;
+      background-color: #0251b8;
+      margin: 5px;
+      border-radius: 0.5cm;
       color: white; }
+      .plkmain .plk h1 {
+        font-weight: bold;
+        font-size: 80px;
+        margin: 50px 50px 10px 50px; }
+      .plkmain .plk .linea-plk {
+        border-bottom: 10px solid white;
+        transform: skewX(-20deg) skewY(0deg);
+        scale: 0.3;
+        translate: -160px; }
+      .plkmain .plk h2 {
+        font-size: 20px;
+        margin: 10px 50px 50px 50px; }
+    .plkmain .video {
+      grid-area: video;
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 10px;
+      align-items: center; }
+    .plkmain .rsp {
+      grid-area: rsp;
+      background-color: #0251b8;
+      margin: 5px;
+      margin-bottom: 30px;
+      border-radius: 0.5cm;
+      color: white; }
+      .plkmain .rsp h2 {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 50px 50px 10px 50px; }
+      .plkmain .rsp .linea-plk {
+        border-bottom: 10px solid white;
+        transform: skewX(-20deg) skewY(0deg);
+        scale: 0.3;
+        translate: -160px; }
+      .plkmain .rsp h3 {
+        font-size: 20px;
+        margin: 10px 50px 30px 50px; }
+      .plkmain .rsp a {
+        font-size: 20px;
+        margin: 0px 50px 50px 50px;
+        color: white; } }

@@ -1,20 +1,124 @@
+.service {
+    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
+}
+
 .serviciostit {
     text-align: center;
     font-weight: bold;
-    background-color: #cdc776;
-    border-radius: 0.5cm;
     margin-top: 5px;
-    height: 3rem;
     padding-top: 10px;
 }
 
 .servicios {
+    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
     display: flex;
     list-style: none;
     flex-direction: column;
     padding-left: 20px;
     background-color: #A9E190;
 
+    .uno {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(81, 202, 81, 0.644);
+        border-radius: 0.5cm;
+
+        h2 {
+            font-weight: bold;
+            padding-left: 15px;
+
+        }
+
+        p {
+            padding-left: 15px;
+        }
+
+    }
+
+    .dos {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(81, 202, 81, 0.644);
+        border-radius: 0.5cm;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        p {
+            padding-left: 15px;
+        }
+
+    }
+
+    .tres {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(81, 202, 81, 0.644);
+        border-radius: 0.5cm;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        p {
+            padding-left: 15px;
+        }
+
+    }
+
+    .cuatro {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(81, 202, 81, 0.644);
+        border-radius: 0.5cm;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        p {
+            padding-left: 15px;
+        }
+
+    }
+
+    .cinco {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(81, 202, 81, 0.644);
+        border-radius: 0.5cm;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        p {
+            padding-left: 15px;
+        }
+    }
+
+    .seis {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgba(81, 202, 81, 0.644);
+        border-radius: 0.5cm;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        p {
+            padding-left: 15px;
+        }
+    }
 }
 
 
