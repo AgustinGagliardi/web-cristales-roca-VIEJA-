@@ -355,7 +355,8 @@ header nav {
 .subnos2 {
   grid-area: subnos2;
   padding-left: 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .subnos3 {
   grid-area: subnos3;
@@ -463,43 +464,43 @@ header nav {
     font-weight: bold;
     padding: 15px; } }
 
-.formulario {
-  margin-left: 10px; }
-  .formulario p {
+div h1 {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+div .formulario {
+  margin: 10px; }
+  div .formulario p {
     margin-top: 5px;
     margin-left: 10px; }
-  .formulario .form-control {
+  div .formulario .form-control {
     border-color: black;
     margin: 10px 5px 0px -5px; }
-  .formulario .form-select {
+  div .formulario .form-select {
     margin: 10px 5px 0px -5px;
     border-color: black; }
-  .formulario .btn {
+  div .formulario .btn {
     align-items: center;
     margin: 20px 20px 20px 0px; }
-
-.service {
-  background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray); }
 
 .serviciostit {
   text-align: center;
   font-weight: bold;
-  margin-top: 5px;
-  padding-top: 10px; }
+  background-color: #A9E190; }
 
 .servicios {
-  background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
   display: flex;
   list-style: none;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 10px;
   background-color: #A9E190; }
   .servicios .uno {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgba(81, 202, 81, 0.644);
-    border-radius: 0.5cm; }
+    background-color: green;
+    border-radius: 0.5cm;
+    color: white; }
     .servicios .uno h2 {
       font-weight: bold;
       padding-left: 15px; }
@@ -509,61 +510,66 @@ header nav {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgba(81, 202, 81, 0.644);
-    border-radius: 0.5cm; }
+    background-color: green;
+    border-radius: 0.5cm;
+    color: white; }
     .servicios .dos h3 {
       font-weight: bold;
       padding-left: 15px; }
     .servicios .dos p {
-      padding-left: 15px; }
+      padding: 5px 10px; }
   .servicios .tres {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgba(81, 202, 81, 0.644);
-    border-radius: 0.5cm; }
+    background-color: green;
+    border-radius: 0.5cm;
+    color: white; }
     .servicios .tres h3 {
       font-weight: bold;
       padding-left: 15px; }
     .servicios .tres p {
-      padding-left: 15px; }
+      padding: 5px 10px; }
   .servicios .cuatro {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgba(81, 202, 81, 0.644);
-    border-radius: 0.5cm; }
+    background-color: green;
+    border-radius: 0.5cm;
+    color: white; }
     .servicios .cuatro h3 {
       font-weight: bold;
       padding-left: 15px; }
     .servicios .cuatro p {
-      padding-left: 15px; }
+      padding: 5px 10px; }
   .servicios .cinco {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgba(81, 202, 81, 0.644);
-    border-radius: 0.5cm; }
+    background-color: green;
+    border-radius: 0.5cm;
+    color: white; }
     .servicios .cinco h3 {
       font-weight: bold;
       padding-left: 15px; }
     .servicios .cinco p {
-      padding-left: 15px; }
+      padding: 5px 10px; }
   .servicios .seis {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgba(81, 202, 81, 0.644);
-    border-radius: 0.5cm; }
+    background-color: green;
+    border-radius: 0.5cm;
+    color: white; }
     .servicios .seis h3 {
       font-weight: bold;
       padding-left: 15px; }
     .servicios .seis p {
-      padding-left: 15px; }
+      padding: 5px 10px; }
 
 @media (min-width: 700px) {
   .servicios {
-    background-color: white;
+    background-color: #e0dede;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
@@ -741,7 +747,7 @@ header nav {
   grid-template-areas: "plk" "rsp"; }
   .plkmain .plk {
     grid-area: plk;
-    background-color: #0251b8;
+    background-color: green;
     margin: 5px;
     border-radius: 0.5cm;
     color: white; }
@@ -750,18 +756,21 @@ header nav {
       text-align: center;
       margin: 5px; }
     .plkmain .plk .linea-plk {
+      display: none;
       border-bottom: 10px solid white;
       transform: skewX(-20deg) skewY(0deg);
       scale: 0.3;
       translate: -150px; }
     .plkmain .plk h2 {
       margin: 10px 30px 30px 30px; }
+    .plkmain .plk img {
+      display: none; }
   .plkmain .video {
     grid-area: video;
     display: none; }
   .plkmain .rsp {
     grid-area: rsp;
-    background-color: #0251b8;
+    background-color: green;
     margin: 5px;
     margin-bottom: 30px;
     border-radius: 0.5cm;
@@ -782,22 +791,25 @@ header nav {
   .plkmain {
     background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
     display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "plk video" "rsp rsp"; }
+    grid-template-areas: "plk video" "plk rsp"; }
     .plkmain .plk {
       grid-area: plk;
-      background-color: #0251b8;
+      background-color: green;
       margin: 5px;
       border-radius: 0.5cm;
-      color: white; }
+      color: white;
+      display: flex;
+      flex-direction: column; }
       .plkmain .plk h1 {
         font-weight: bold;
         font-size: 80px;
-        margin: 50px 50px 10px 50px; }
+        margin: 30px 50px 10px 50px; }
       .plkmain .plk .linea-plk {
+        display: inline;
         border-bottom: 10px solid white;
         transform: skewX(-20deg) skewY(0deg);
         scale: 0.3;
@@ -805,6 +817,11 @@ header nav {
       .plkmain .plk h2 {
         font-size: 20px;
         margin: 10px 50px 50px 50px; }
+      .plkmain .plk img {
+        display: inline;
+        height: 270px;
+        margin: 0px 30px 30px 30px;
+        border-radius: 0.2cm; }
     .plkmain .video {
       grid-area: video;
       display: flex;
@@ -813,20 +830,21 @@ header nav {
       align-items: center; }
     .plkmain .rsp {
       grid-area: rsp;
-      background-color: #0251b8;
+      background-color: green;
       margin: 5px;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
       border-radius: 0.5cm;
       color: white; }
       .plkmain .rsp h2 {
         font-weight: bold;
         font-size: 40px;
-        margin: 50px 50px 10px 50px; }
+        margin: 50px 50px 10px 50px;
+        text-align: start; }
       .plkmain .rsp .linea-plk {
         border-bottom: 10px solid white;
         transform: skewX(-20deg) skewY(0deg);
         scale: 0.3;
-        translate: -160px; }
+        translate: -396px; }
       .plkmain .rsp h3 {
         font-size: 20px;
         margin: 10px 50px 30px 50px; }

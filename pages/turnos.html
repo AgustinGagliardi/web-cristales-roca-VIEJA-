@@ -48,68 +48,71 @@
         </nav>
     </header>
     <!-- MAIN -->
-    <h1>Saca tu turno:</h1>
-    <form method="post" class="formulario">
+    <div>
+        <h1>Saca tu turno:</h1>
+        <form method="post" class="formulario">
+            
+            <!-- Nombre y Apellido -->
+            <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="default input example">
+            <!-- Cristal a cambiar -->
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione Cristal a cambiar:</option>
+                <option value="Parabrisas">Parabrisas</option>
+                <option value="Luneta">Luneta</option>
+                <option value="Puerta Delantera Derecha">Puerta Delantera Derecha</option>
+                <option value="Puerta Delantera Izquierda">Puerta Delantera Izquierda</option>
+                <option value="Puerta Trasera Derecha">Puerta Trasera Derecha</option>
+                <option value="Puerta Trasera Izquierda">Puerta Trasera Izquierda</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <!-- Turno a comfirmar -->
+            <p>Seleccione Turno a confirmar:</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Turno 8:30 hs y retiro después de las 18:00 hs
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Turno 15:30 hs y retiro al otro día después de las 9:00 hs
+                </label>
+            </div>
+            
+
+            <!-- Calendario -->
+
+            <!-- Datos del Seguro  -->
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Marca del Vehiculo</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Modelo del Vehiculo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Nombre de su compania de seguros</label>
+            </div>
+
+            <!-- El vehiculo posee -->
+            <select class="form-select" aria-label="Default select example">
+                <option selected>El Vehiculo posee:</option>
+                <option value="1">Antena</option>
+                <option value="2">Sensor de lluvia/luces</option>
+                <option value="3">Camara</option>
+                <option value="4">Nada</option>
+            </select>
+
+            <button type="button" class="btn btn-success">Enviar</button>
+
+        </form>
+
+    </div>
     
-    <!-- Nombre y Apellido -->
-    <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="default input example">
-    <!-- Cristal a cambiar -->
-    <select class="form-select" aria-label="Default select example">
-        <option selected>Seleccione Cristal a cambiar:</option>
-        <option value="Parabrisas">Parabrisas</option>
-        <option value="Luneta">Luneta</option>
-        <option value="Puerta Delantera Derecha">Puerta Delantera Derecha</option>
-        <option value="Puerta Delantera Izquierda">Puerta Delantera Izquierda</option>
-        <option value="Puerta Trasera Derecha">Puerta Trasera Derecha</option>
-        <option value="Puerta Trasera Izquierda">Puerta Trasera Izquierda</option>
-        <option value="Otro">Otro</option>
-    </select>
-
-    <!-- Turno a comfirmar -->
-    <p>Seleccione Turno a confirmar:</p>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios1">
-            Turno 8:30 hs y retiro después de las 18:00 hs
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-        <label class="form-check-label" for="exampleRadios2">
-            Turno 15:30 hs y retiro al otro día después de las 9:00 hs
-        </label>
-    </div>
-      
-
-    <!-- Calendario -->
-
-    <!-- Datos del Seguro  -->
-    <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Marca del Vehiculo</label>
-      </div>
-      <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Modelo del Vehiculo</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Nombre de su compania de seguros</label>
-      </div>
-    </div>
-
-    <!-- El vehiculo posee -->
-    <select class="form-select" aria-label="Default select example">
-        <option selected>El Vehiculo posee:</option>
-        <option value="1">Antena</option>
-        <option value="2">Sensor de lluvia/luces</option>
-        <option value="3">Camara</option>
-        <option value="4">Nada</option>
-    </select>
-
-    <button type="button" class="btn btn-success">Enviar</button>
-
-</form>
 
     
     <!-- Footer -->

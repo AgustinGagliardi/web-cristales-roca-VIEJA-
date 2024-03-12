@@ -11,7 +11,7 @@
 
     .plk {
         grid-area: plk;
-        background-color: #0251b8;
+        background-color: green;
         margin: 5px;
         border-radius: 0.5cm;
         color: white;
@@ -24,6 +24,7 @@
         }
 
         .linea-plk {
+            display: none;
             border-bottom: 10px solid white;
             transform: skewX(-20deg) skewY(0deg);
             scale: 0.3;
@@ -32,6 +33,10 @@
 
         h2{
             margin: 10px 30px 30px 30px;
+        }
+
+        img{
+            display: none;
         }
     }
 
@@ -43,7 +48,7 @@
 
     .rsp {
         grid-area: rsp;
-        background-color: #0251b8;
+        background-color: green;
         margin: 5px;
         margin-bottom: 30px;
         border-radius: 0.5cm;
@@ -80,29 +85,32 @@
     .plkmain {
         background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
         display: grid;
-        grid-template-columns: 0.6fr 0.4fr;
+        grid-template-columns: 0.6fr 1fr;
         grid-template-rows: 0.5fr 0.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
             "plk video"
-            "rsp rsp"
+            "plk rsp"
         ;
 
         .plk {
             grid-area: plk;
-            background-color: #0251b8;
+            background-color: green;
             margin: 5px;
             border-radius: 0.5cm;
             color: white;
+            display: flex;
+            flex-direction: column;
 
             h1 {
                 font-weight: bold;
                 font-size: 80px;
-                margin: 50px 50px 10px 50px;
+                margin: 30px 50px 10px 50px;
             }
 
             .linea-plk {
+                display: inline;
                 border-bottom: 10px solid white;
                 transform: skewX(-20deg) skewY(0deg);
                 scale: 0.3;
@@ -112,6 +120,13 @@
             h2 {
                 font-size: 20px;
                 margin: 10px 50px 50px 50px;
+            }
+
+            img{
+                display: inline;
+                height: 270px;
+                margin: 0px 30px 30px 30px;
+                border-radius: 0.2cm;
             }
         }
 
@@ -125,9 +140,9 @@
 
         .rsp {
             grid-area: rsp;
-            background-color: #0251b8;
+            background-color: green;
             margin: 5px;
-            margin-bottom: 30px;
+            margin-bottom: 5px;
             border-radius: 0.5cm;
             color: white;
 
@@ -135,13 +150,14 @@
                 font-weight: bold;
                 font-size: 40px;
                 margin: 50px 50px 10px 50px;
+                text-align: start;
             }
 
             .linea-plk {
                 border-bottom: 10px solid white;
                 transform: skewX(-20deg) skewY(0deg);
                 scale: 0.3;
-                translate: -160px;
+                translate: -396px;
             }
 
             h3 {

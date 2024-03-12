@@ -1,28 +1,25 @@
-.service {
-    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
-}
 
 .serviciostit {
     text-align: center;
     font-weight: bold;
-    margin-top: 5px;
-    padding-top: 10px;
+    background-color: #A9E190;
 }
 
 .servicios {
-    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
+    
     display: flex;
     list-style: none;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: #A9E190;
 
     .uno {
         display: flex;
         flex-direction: column;
         margin: 20px;
-        background-color: rgba(81, 202, 81, 0.644);
+        background-color: green;
         border-radius: 0.5cm;
+        color: white;
 
         h2 {
             font-weight: bold;
@@ -40,8 +37,9 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
-        background-color: rgba(81, 202, 81, 0.644);
+        background-color: green;
         border-radius: 0.5cm;
+        color: white;
 
         h3 {
             font-weight: bold;
@@ -49,7 +47,7 @@
         }
 
         p {
-            padding-left: 15px;
+            padding: 5px 10px ;
         }
 
     }
@@ -58,15 +56,16 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
-        background-color: rgba(81, 202, 81, 0.644);
+        background-color: green;
         border-radius: 0.5cm;
+        color: white;
 
         h3 {
             font-weight: bold;
             padding-left: 15px;
         }
         p {
-            padding-left: 15px;
+            padding: 5px 10px ;
         }
 
     }
@@ -75,15 +74,16 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
-        background-color: rgba(81, 202, 81, 0.644);
+        background-color: green;
         border-radius: 0.5cm;
+        color: white;
 
         h3 {
             font-weight: bold;
             padding-left: 15px;
         }
         p {
-            padding-left: 15px;
+            padding: 5px 10px ;
         }
 
     }
@@ -92,15 +92,16 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
-        background-color: rgba(81, 202, 81, 0.644);
+        background-color: green;
         border-radius: 0.5cm;
+        color: white;
 
         h3 {
             font-weight: bold;
             padding-left: 15px;
         }
         p {
-            padding-left: 15px;
+            padding: 5px 10px ;
         }
     }
 
@@ -108,15 +109,16 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
-        background-color: rgba(81, 202, 81, 0.644);
+        background-color: green;
         border-radius: 0.5cm;
+        color: white;
 
         h3 {
             font-weight: bold;
             padding-left: 15px;
         }
         p {
-            padding-left: 15px;
+            padding: 5px 10px ;
         }
     }
 }
@@ -124,7 +126,7 @@
 
 @media (min-width: 700px) {
     .servicios {
-        background-color: white;
+        background-color: rgb(224, 222, 222);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;

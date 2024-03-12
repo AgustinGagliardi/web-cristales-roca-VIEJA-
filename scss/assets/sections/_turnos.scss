@@ -1,28 +1,36 @@
-.formulario{
-    margin-left: 10px;
-    
-    p{
-        margin-top: 5px;
-        margin-left: 10px;
-    }
-    
-    .form-control{
-        border-color: black;
-        margin: 10px 5px 0px -5px;
+
+div{
+    h1{
+        font-weight: bold;
+        text-transform: uppercase ;
     }
 
+    .formulario{
+        margin: 10px;
+        p{
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        
+        .form-control{
+            border-color: black;
+            margin: 10px 5px 0px -5px;
+        }
 
-    .form-select{
-        margin: 10px 5px 0px -5px;
-        border-color: black;
+
+        .form-select{
+            margin: 10px 5px 0px -5px;
+            border-color: black;
+        }
+
+        .btn{
+            align-items: center;
+            margin: 20px 20px 20px 0px;
+        }
+
+
+
     }
-
-    .btn{
-        align-items: center;
-        margin: 20px 20px 20px 0px;
-    }
-
 
 
 }
-
