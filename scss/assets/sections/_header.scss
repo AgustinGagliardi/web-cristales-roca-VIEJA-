@@ -31,7 +31,7 @@ header {
     }
 
     nav {
-        background-color: gray;
+        background-color: $gris;
         display: flex;
         width: 99vw;
         justify-content: space-around;
@@ -43,7 +43,7 @@ header {
         .listado {
             display: flex;
             list-style: none;
-            background-color: green;
+            background-color: $verde;
             border-radius: 0.5cm;
             width: 70vw;
             align-items: center;
@@ -52,13 +52,24 @@ header {
 
         li {
             padding: 0 1rem;
-            background-color: #A9E190;
             border-radius: 0.2cm;
+
+
         }
 
         a {
-            color: black;
+            color: white;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn {
+            color: white;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            color: white;
         }
     }
 }
@@ -72,7 +83,8 @@ header {
 
         nav {
             background-color: gray;
-            .listado{
+
+            .listado {
                 display: none;
             }
         }

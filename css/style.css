@@ -47,11 +47,16 @@ header nav {
     justify-content: space-evenly; }
   header nav li {
     padding: 0 1rem;
-    background-color: #A9E190;
     border-radius: 0.2cm; }
   header nav a {
-    color: black;
-    text-decoration: none; }
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+  header nav .btn {
+    color: white;
+    font-weight: bold; }
+  header nav .dropdown {
+    color: white; }
 
 /* Para cambiar algo en MOBILE */
 @media (max-width: 600px) {
