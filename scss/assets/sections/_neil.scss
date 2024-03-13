@@ -1,0 +1,295 @@
+article {
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px;
+
+    }
+
+    .btn {
+        transform: translate(15%);
+        font-weight: bold;
+
+    }
+
+    img {
+        width: 100vw;
+    }
+
+    iframe {
+        margin: 5px;
+    }
+}
+
+.climati {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    img {
+
+        width: 100vw;
+        transition: 0.5s;
+        transform: scale(0.8);
+    }
+
+    img:hover {
+        transform: scale(1);
+    }
+}
+
+.autos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    img {
+        width: 100vw;
+        transition: 0.5s;
+        transform: scale(0.8);
+    }
+
+    img:hover {
+        transform: scale(1);
+    }
+
+    a {
+        margin: 20px;
+    }
+}
+
+.genki {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46);
+    border-bottom: 5px solid white;
+
+    img {
+        width: 100vw;
+        transition: 0.5s;
+        transform: scale(0.8);
+        z-index: 2;
+    }
+
+    img:hover {
+        transform: scale(1);
+    }
+
+    .gradient-neil {
+        background: linear-gradient(to bottom, black, gray, );
+        border-radius: 0.5cm;
+
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        text-align: initial;
+        background-color: white;
+        transform: scale(0.8);
+        color: black;
+        font-weight: bold;
+    }
+
+    h4 {
+        color: white;
+        text-align: initial;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        text-align: initial;
+        margin-left: 10px;
+    }
+
+    .imggenki {
+        display: none;
+    }
+}
+
+@media(min-width: 700px) {
+
+    .neil1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .btn {
+            width: 15vw;
+        }
+
+        .neil-camion {
+            width: 30vw;
+        }
+    }
+
+    iframe {
+        width: 100vw;
+    }
+
+    .neil2 {
+        display: grid;
+        grid-template-columns: 0.3fr 0.3fr;
+        grid-template-rows: 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "climati autos"
+        ;
+        justify-content: space-around;
+
+        .climati {
+            grid-area: climati;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+            img {
+
+                width: 20vw;
+                transition: 0.5s;
+                transform: scale(0.8);
+            }
+
+            img:hover {
+                transform: scale(1);
+            }
+
+            a {
+                margin: 20px;
+            }
+
+            h3 {
+                margin-top: -85px;
+            }
+
+        }
+
+        .autos {
+            grid-area: autos;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+            img {
+                width: 30vw;
+                transition: 0.5s;
+                transform: scale(0.6);
+            }
+
+            img:hover {
+                transform: scale(0.8);
+            }
+
+            a {
+                margin: 20px;
+            }
+        }
+
+    }
+
+
+
+    .genki {
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "gradient-neil textgenki"
+            "gradient-neil imggenki"
+        ;
+        background-color: white;
+        margin-bottom: 30px;
+        align-items: start;
+
+        img {
+            width: 30vw;
+            transition: 0.5s;
+            transform: scale(0.6);
+            z-index: 2;
+            margin-top: -70px;
+        }
+
+        img:hover {
+            transform: scale(0.8);
+        }
+
+        .gradient-neil {
+            background: none;
+            border: 3px solid black;
+            border-radius: 0.5cm;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .btn {
+            margin-top: -70px;
+            margin-bottom: 20px;
+        }
+
+
+
+        .textgenki {
+            grid-area: textgenki;
+            text-align: start;
+            border: 3px solid black;
+            border-radius: 0.5cm;
+            align-content: center;
+            margin: 2px;
+
+
+            h3 {
+                color: black;
+                font-weight: bold;
+                margin-left: -40px;
+            }
+
+            h4 {
+                color: black;
+                font-weight: bold;
+            }
+
+            ul {
+                margin-left: 10px;
+                color: black;
+                text-decoration: none;
+                list-style: none;
+            }
+
+
+        }
+
+        .imggenki {
+            grid-area: imggenki;
+            margin-top: -150px;
+            display: inline;
+            display: flex;
+            flex-direction: row;
+            width: 20vw;
+        }
+
+
+    }
+}

@@ -16,7 +16,7 @@
         border-radius: 0.5cm;
         color: white;
 
-        h1{
+        h1 {
             font-weight: bold;
             text-align: center;
             margin: 5px;
@@ -31,16 +31,16 @@
             translate: -150px;
         }
 
-        h2{
+        h2 {
             margin: 10px 30px 30px 30px;
         }
 
-        img{
+        .plk-fabrica {
             display: none;
         }
     }
 
-    .video{
+    .video {
         grid-area: video;
         display: none;
 
@@ -53,6 +53,9 @@
         margin-bottom: 30px;
         border-radius: 0.5cm;
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h2 {
             font-weight: bold;
@@ -61,15 +64,24 @@
             text-align: center;
         }
 
-        h3{
+        h3 {
             margin: 10px 30px 30px 30px;
         }
 
-        a{
+        a {
             margin: 10px 30px 30px 30px;
             color: white;
             display: flex;
         }
+
+        img {
+            grid-area: rsplogo;
+            width: 50vw;
+            margin: 10px;
+        }
+
+
+
     }
 
 
@@ -85,7 +97,7 @@
     .plkmain {
         background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
         display: grid;
-        grid-template-columns: 0.6fr 1fr;
+        grid-template-columns: 0.6fr 0.4fr;
         grid-template-rows: 0.5fr 0.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -122,9 +134,11 @@
                 margin: 10px 50px 50px 50px;
             }
 
-            img{
+            .plk-fabrica {
                 display: inline;
                 height: 270px;
+                width: 30vw;
+
                 margin: 0px 30px 30px 30px;
                 border-radius: 0.2cm;
             }
@@ -134,44 +148,57 @@
             grid-area: video;
             display: flex;
             flex-direction: row-reverse;
+            width: 65vw;
             margin: 10px;
             align-items: center;
         }
 
         .rsp {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "rsptext rsplogo";
             grid-area: rsp;
-            background-color: green;
-            margin: 5px;
-            margin-bottom: 5px;
-            border-radius: 0.5cm;
-            color: white;
+            align-items: center;
+            justify-items: center;
 
-            h2 {
-                font-weight: bold;
-                font-size: 40px;
-                margin: 50px 50px 10px 50px;
-                text-align: start;
+            .rsptext {
+                grid-area: rsptext;
+
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 35px;
+                    margin: 10px;
+                    text-align: start;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    margin: 20px 10px ;
+                    margin-top: 30px;
+                }
+
+                a {
+                    font-size: 20px;
+                    margin: 10px ;
+                    margin-top: 90px;
+                    color: white;
+                }
+
+
+
             }
 
-            .linea-plk {
-                border-bottom: 10px solid white;
-                transform: skewX(-20deg) skewY(0deg);
-                scale: 0.3;
-                translate: -396px;
-            }
-
-            h3 {
-                font-size: 20px;
-                margin: 10px 50px 30px 50px;
-            }
-
-            a {
-                font-size: 20px;
-                margin: 0px 50px 50px 50px;
-
-                color: white;
+            img {
+                grid-area: rsplogo;
+                width: 20vw;
             }
 
         }
+
+
     }
 }

@@ -768,7 +768,7 @@ div .formulario {
       translate: -150px; }
     .plkmain .plk h2 {
       margin: 10px 30px 30px 30px; }
-    .plkmain .plk img {
+    .plkmain .plk .plk-fabrica {
       display: none; }
   .plkmain .video {
     grid-area: video;
@@ -779,7 +779,10 @@ div .formulario {
     margin: 5px;
     margin-bottom: 30px;
     border-radius: 0.5cm;
-    color: white; }
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .plkmain .rsp h2 {
       font-weight: bold;
       font-size: 30px;
@@ -791,12 +794,16 @@ div .formulario {
       margin: 10px 30px 30px 30px;
       color: white;
       display: flex; }
+    .plkmain .rsp img {
+      grid-area: rsplogo;
+      width: 50vw;
+      margin: 10px; }
 
 @media (min-width: 700px) {
   .plkmain {
     background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
     display: grid;
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-columns: 0.6fr 0.4fr;
     grid-template-rows: 0.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -822,38 +829,232 @@ div .formulario {
       .plkmain .plk h2 {
         font-size: 20px;
         margin: 10px 50px 50px 50px; }
-      .plkmain .plk img {
+      .plkmain .plk .plk-fabrica {
         display: inline;
         height: 270px;
+        width: 30vw;
         margin: 0px 30px 30px 30px;
         border-radius: 0.2cm; }
     .plkmain .video {
       grid-area: video;
       display: flex;
       flex-direction: row-reverse;
+      width: 65vw;
       margin: 10px;
       align-items: center; }
     .plkmain .rsp {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "rsptext rsplogo";
       grid-area: rsp;
-      background-color: green;
-      margin: 5px;
-      margin-bottom: 5px;
+      align-items: center;
+      justify-items: center; }
+      .plkmain .rsp .rsptext {
+        grid-area: rsptext; }
+        .plkmain .rsp .rsptext h2 {
+          font-weight: bold;
+          font-size: 35px;
+          margin: 10px;
+          text-align: start; }
+        .plkmain .rsp .rsptext h3 {
+          font-size: 20px;
+          margin: 20px 10px;
+          margin-top: 30px; }
+        .plkmain .rsp .rsptext a {
+          font-size: 20px;
+          margin: 10px;
+          margin-top: 90px;
+          color: white; }
+      .plkmain .rsp img {
+        grid-area: rsplogo;
+        width: 20vw; } }
+
+article h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px; }
+
+article .btn {
+  transform: translate(15%);
+  font-weight: bold; }
+
+article img {
+  width: 100vw; }
+
+article iframe {
+  margin: 5px; }
+
+.climati {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .climati img {
+    width: 100vw;
+    transition: 0.5s;
+    transform: scale(0.8); }
+  .climati img:hover {
+    transform: scale(1); }
+
+.autos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .autos img {
+    width: 100vw;
+    transition: 0.5s;
+    transform: scale(0.8); }
+  .autos img:hover {
+    transform: scale(1); }
+  .autos a {
+    margin: 20px; }
+
+.genki {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #2e2e2e;
+  border-bottom: 5px solid white; }
+  .genki img {
+    width: 100vw;
+    transition: 0.5s;
+    transform: scale(0.8);
+    z-index: 2; }
+  .genki img:hover {
+    transform: scale(1); }
+  .genki .gradient-neil {
+    background: linear-gradient(to bottom, black, gray);
+    border-radius: 0.5cm; }
+  .genki .btn {
+    margin-bottom: 20px; }
+  .genki h3 {
+    text-align: initial;
+    background-color: white;
+    transform: scale(0.8);
+    color: black;
+    font-weight: bold; }
+  .genki h4 {
+    color: white;
+    text-align: initial;
+    font-weight: bold;
+    margin-left: 40px; }
+  .genki ul {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-align: initial;
+    margin-left: 10px; }
+  .genki .imggenki {
+    display: none; }
+
+@media (min-width: 700px) {
+  .neil1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .neil1 h2 {
+      font-size: 50px;
+      font-weight: bold; }
+    .neil1 .btn {
+      width: 15vw; }
+    .neil1 .neil-camion {
+      width: 30vw; }
+  iframe {
+    width: 100vw; }
+  .neil2 {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-rows: 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "climati autos";
+    justify-content: space-around; }
+    .neil2 .climati {
+      grid-area: climati;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .neil2 .climati img {
+        width: 20vw;
+        transition: 0.5s;
+        transform: scale(0.8); }
+      .neil2 .climati img:hover {
+        transform: scale(1); }
+      .neil2 .climati a {
+        margin: 20px; }
+      .neil2 .climati h3 {
+        margin-top: -85px; }
+    .neil2 .autos {
+      grid-area: autos;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .neil2 .autos img {
+        width: 30vw;
+        transition: 0.5s;
+        transform: scale(0.6); }
+      .neil2 .autos img:hover {
+        transform: scale(0.8); }
+      .neil2 .autos a {
+        margin: 20px; }
+  .genki {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "gradient-neil textgenki" "gradient-neil imggenki";
+    background-color: white;
+    margin-bottom: 30px;
+    align-items: start; }
+    .genki img {
+      width: 30vw;
+      transition: 0.5s;
+      transform: scale(0.6);
+      z-index: 2;
+      margin-top: -70px; }
+    .genki img:hover {
+      transform: scale(0.8); }
+    .genki .gradient-neil {
+      background: none;
+      border: 3px solid black;
       border-radius: 0.5cm;
-      color: white; }
-      .plkmain .rsp h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .genki .btn {
+      margin-top: -70px;
+      margin-bottom: 20px; }
+    .genki .textgenki {
+      grid-area: textgenki;
+      text-align: start;
+      border: 3px solid black;
+      border-radius: 0.5cm;
+      align-content: center;
+      margin: 2px; }
+      .genki .textgenki h3 {
+        color: black;
         font-weight: bold;
-        font-size: 40px;
-        margin: 50px 50px 10px 50px;
-        text-align: start; }
-      .plkmain .rsp .linea-plk {
-        border-bottom: 10px solid white;
-        transform: skewX(-20deg) skewY(0deg);
-        scale: 0.3;
-        translate: -396px; }
-      .plkmain .rsp h3 {
-        font-size: 20px;
-        margin: 10px 50px 30px 50px; }
-      .plkmain .rsp a {
-        font-size: 20px;
-        margin: 0px 50px 50px 50px;
-        color: white; } }
+        margin-left: -40px; }
+      .genki .textgenki h4 {
+        color: black;
+        font-weight: bold; }
+      .genki .textgenki ul {
+        margin-left: 10px;
+        color: black;
+        text-decoration: none;
+        list-style: none; }
+    .genki .imggenki {
+      grid-area: imggenki;
+      margin-top: -150px;
+      display: inline;
+      display: flex;
+      flex-direction: row;
+      width: 20vw; } }
