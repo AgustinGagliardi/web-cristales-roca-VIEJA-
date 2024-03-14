@@ -950,7 +950,9 @@ article iframe {
     text-align: initial;
     margin-left: 10px; }
   .genki .imggenki {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 @media (min-width: 700px) {
   .neil1 {
