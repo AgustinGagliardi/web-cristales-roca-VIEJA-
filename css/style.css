@@ -949,10 +949,6 @@ article iframe {
     color: white;
     text-align: initial;
     margin-left: 10px; }
-  .genki .imggenki {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
 
 @media (min-width: 700px) {
   .neil1 {
