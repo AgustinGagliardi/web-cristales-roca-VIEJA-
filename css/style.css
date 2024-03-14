@@ -1052,11 +1052,4 @@ article iframe {
         margin-left: 10px;
         color: black;
         text-decoration: none;
-        list-style: none; }
-    .genki .imggenki {
-      grid-area: imggenki;
-      margin-top: -150px;
-      display: inline;
-      display: flex;
-      flex-direction: row;
-      width: 20vw; } }
+        list-style: none; } }
